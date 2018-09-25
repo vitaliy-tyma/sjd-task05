@@ -4,7 +4,7 @@ public class AppRunner {
 
 
 	
-	public static boolean isPalindrom(int cand) {
+	public static boolean isPalindrome(int cand) {
 		String str = Integer.toString(cand); 
 		int len = str.length();
 		
@@ -67,28 +67,28 @@ public class AppRunner {
 		
 		
 		/* Task 02
-		 * Max Palindrom of two 4 rank numbers  
+		 * Max Palindrome of two 4 rank numbers  
 		 * */		
 		final int NUM1_MAX = 9999;
 		final int NUM2_MAX = 9999;
 		int candidate = 0;
-		int max_palindrom = 0; //First palindrom
+		int max_palindrome = 0; //First palindrome
 		
 		for (int j = 0; j <= NUM1_MAX; j++) {
 			for (int k = 0; k <= NUM2_MAX; k++){
 				candidate = j*k;
 				
-				if (isPalindrom(candidate) == true){
-					if (candidate > max_palindrom) {
-						max_palindrom = candidate;
+				if (isPalindrome(candidate) == true){
+					if (candidate > max_palindrome) {
+						max_palindrome = candidate;
 					}
 				}
 				
 			}
 		}
 		System.out.println(
-				"Max palindrom of two 4-rank numbers multiplication  = "
-				+ max_palindrom);
+				"Max palindrome of two 4-rank numbers multiplication  = "
+				+ max_palindrome);
 		/* END OF TASK 2*/		
 
 		
@@ -104,11 +104,4 @@ public class AppRunner {
 
 }
 
-/*
- 			System.out.println("rest = " + num);
-			System.out.println("num = " + rest);
-			System.out.println("result = " + result);
-//			System.out.println("rank = " + rank);
-			System.out.println("");
 
- * */
