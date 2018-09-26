@@ -62,39 +62,38 @@ public class AppRunner {
 	}
 	
 	
-/*********************************************************/	
+/**MAIN*******************************************************/	
 	public static void main(String[] args) {
 		
 		Logger logger = Logger.getLogger(
 				AppRunner.class.getName());
 		
-		/* Task 01
+		/** Task 01
 		 * Sum of all digits in 12345
 		 * 1) module
 		 * 2) character splitting
 		 * */
 		
-		int num = 12345;
-		int result = 0;
+		int num = 12345; //VALUE
 		
 		
 		
 		
 		
-		/*Solution 1*/
-		result = sumOfAllDigits1(num);		
-		logger.info("Sum (Solution 1) = " + result);
-//		System.out.println("Sum (Solution 1) = "+result);
+		
+		/** Solution 1*/
+		int result = sumOfAllDigits1(num);		
+		logger.info("Task1. Sum (Solution 1) = " + result);
+
 		
 
 		
-		result = 0;
+			
 		
-		
-		/*Solution 2*/
+		/** Solution 2*/
 		result = sumOfAllDigits2(num);
-		logger.info("Sum (Solution 2) = " + result);
-//		System.out.println("Sum (Solution 2) = "+result);
+		logger.info("Task1. Sum (Solution 2) = " + result);
+
 		/* END OF TASK 1*/		
 		
 		
@@ -103,24 +102,22 @@ public class AppRunner {
 		
 		
 		
-		/* Task 02
+		
+		
+		/** Task 02
 		 * Max Palindrome of two 4 rank numbers  
 		 * */		
-		final int NUM1_MAX = 9999;
-		final int NUM2_MAX = 9999;
+
 		final int NUM1_MIN = 1000;
 		final int NUM2_MIN = 1000;
-
-		int max_palindrome = 0;
-		max_palindrome = maxPalindrome(NUM1_MIN,NUM1_MAX,NUM2_MAX,NUM2_MAX);
+		final int NUM1_MAX = 9999;
+		final int NUM2_MAX = 9999;
+		
+		int max_palindrome = maxPalindrome(NUM1_MIN,NUM1_MAX,NUM2_MIN,NUM2_MAX);
 		
 		logger.info(
-				"Max palindrome of two 4-rank numbers multiplication  = " + 
+				"Task2. Max palindrome of two 4-rank numbers multiplication  = " + 
 				+ max_palindrome);
-/*		System.out.println(
-		"Max palindrome of two 4-rank numbers multiplication  = "
-		+ max_palindrome);
-*/	
 		/* END OF TASK 2*/		
 
 		
