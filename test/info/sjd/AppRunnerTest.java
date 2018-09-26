@@ -42,7 +42,7 @@ class AppRunnerTest {
 		
 		assertNotNull(AppRunner.isPalindrome(123456789));
 		
-		assertTrue(AppRunner.isPalindrome(54345) == true);
+		assertTrue(AppRunner.isPalindrome(54345));
 	}
 	
 	
