@@ -1,5 +1,7 @@
 package info.sjd;
 
+import java.util.logging.Logger;
+
 public class AppRunner {
 
 	public static int sumOfAllDigits1(int num) {
@@ -38,7 +40,7 @@ public class AppRunner {
 	}	
 	
 	public static int maxPalindrome(int NUM1_MIN, int NUM1_MAX,
-									int NUM2_MAX, int NUM2_MAX) {
+									int NUM2_MIN, int NUM2_MAX) {
 		
 		int candidate = 0;
 		int max_palindrome = NUM1_MIN * NUM2_MIN; //Start number;
@@ -63,7 +65,7 @@ public class AppRunner {
 /*********************************************************/	
 	public static void main(String[] args) {
 		
-		private static Logger logger = Logger.getLogger(
+		Logger logger = Logger.getLogger(
 				AppRunner.class.getName());
 		
 		/* Task 01
